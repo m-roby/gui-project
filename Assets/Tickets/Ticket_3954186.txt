@@ -1,0 +1,42 @@
+Store Number: 111111
+
+Name: ttyp51
+IP Address: 10.1.2.51
+Uptime: 3 days, 14:51,
+Run_Level: 4
+Motherboard: DH61WW
+Motherboard Manufacturer: INTEL CORPORATION
+Printer Configured?: Yes
+Printer Device Node: /dev/rcprinter
+Printer Attached: None
+Printer SimLink: 
+Cash Drawer Configured: No
+Touch Scrren: No Touch Screen Detected
+Drive Health: No Issues Detected
+Printer Errors: No Issues Detected
+Packet Loss: 0
+
+
+
+Error Code: 8
+
+Step 1:
+Locate Terminal ttyp51 and it's Touch Screen. Turn the power to both devices off.
+
+Time On Step 1.801113
+
+Step 2:
+On the back or bottom of the touch screen, there is a USB port that should connect the touch screen to the computer. Unplug this cable from the monitor, wait for 30 seconds and then plug it back in.
+If this cable is missing, please attempt to locate it and plug it back in.
+
+Time On Step 0.1656669
+
+Step 3:
+On the back of the terminal, the other end of the USB cable should be plugged in to a USB port. Please disconnect the cable for 30 seconds and then reconnect it. If the cable is NOT connected, plug it in to an available USB port.
+You may now power the monitor and terminal back on.
+
+Time On Step 0.132534
+
+
+
+Issue Resolved

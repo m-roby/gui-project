@@ -1,0 +1,27 @@
+Store Number: 111111
+Name: asdfg
+Contact Information: sdfgsdfg
+Issue Summary: ssdfgsdfg
+
+Name: ttyp50
+IP Address: 10.1.2.50
+Uptime: 3 days, 14:51,
+Run_Level: 4
+Motherboard: 0YP693
+Motherboard Manufacturer: DELL INC.
+Printer Configured?: Yes
+Printer Device Node: /dev/rcprinter
+Printer Attached: USB: Seiko Epson Corp. Receipt Printer M129C/TM-T70
+Printer SimLink: usb/lp0
+Cash Drawer Configured: Yes
+Touch Scrren: Elo TouchSystems 2216 AccuTouch® Touchmonitor Interface
+Drive Health: No Issues Detected
+Printer Errors: No Issues Detected
+Packet Loss: 0
+
+
+
+Error Code: 0
+
+
+

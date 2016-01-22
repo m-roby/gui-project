@@ -1,0 +1,37 @@
+
+Command Already Pending at 12/21/2015 10:04:15 PM 23.39873
+Command Already Pending at 12/21/2015 10:09:34 PM 7.212532
+Command Already Pending at 12/21/2015 10:11:30 PM 3.044116
+Done
+RefreshKitchen at 12/21/2015 10:11:43 PM 15.42765
+Done
+RefreshKitchen at 12/21/2015 10:12:08 PM 40.60469
+Ticket /Ticket_8752893.txt Created at 12/21/2015 10:12:11 PM 43.37253
+Done
+RefreshKitchen at 12/21/2015 10:16:39 PM 8.414713
+Done
+Ticket /Ticket_9953208.txt Created at 12/21/2015 10:17:01 PM 29.75757
+DoneRefreshKitchen at 12/21/2015 11:34:33 PM 4.719514
+DoneTicket /Ticket_3823659.txt Created at 12/21/2015 11:34:45 PM 16.35075
+DoneTicket /Ticket_9314984.txt Created at 12/21/2015 11:51:50 PM 9.122889
+Done
+Ticket /Ticket_888613.txt Created at 12/22/2015 12:28:34 AM 12.8132
+Done
+Ticket /Ticket_5787143.txt Created at 12/22/2015 12:29:36 AM 12.87263
+Done
+Ticket /Ticket_3954186.txt Created at 12/22/2015 1:50:29 AM 5.489511
+Done
+RefreshTerminals at 12/22/2015 1:50:29 AM 5.505868
+Ticket /Ticket_7522962.txt Created at 12/22/2015 2:13:50 AM 7.814439
+Done
+RefreshTerminals at 12/22/2015 2:13:50 AM 7.830464
+Ticket /Ticket_9202697.txt Created at 12/22/2015 2:17:19 AM 11.37666
+Done
+Ticket /Ticket_3110758.txt Created at 12/22/2015 2:17:23 AM 14.84289
+Done
+RefreshTerminals at 12/22/2015 2:17:23 AM 14.85382
+Command Already Pending at 12/22/2015 2:42:39 AM 2.783504
+Done
+RefreshTerminals at 12/22/2015 2:42:41 AM 4.001874
+Done
+RefreshTerminals at 12/22/2015 2:49:27 AM 3.610229
