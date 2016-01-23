@@ -32,10 +32,7 @@ public class Save_Data : MonoBehaviour {
 	// Use this for initialization
 	public void  Submit_Ticket()
     {
-        Ticket_Name = "/Ticket_" + UnityEngine.Random.Range(9999999, 0) + ".txt";
-        Path = Application.dataPath + "/Tickets" + Ticket_Name;
-        string Ticket_Text = Terminal_Summary + Environment.NewLine;
-        File.WriteAllText(Path, Store_Number + Environment.NewLine + Customer_Input + Environment.NewLine + Ticket_Text + Environment.NewLine + Environment.NewLine + "Error Code: " + Error_Code + Environment.NewLine + Environment.NewLine + TroubleShooting_Steps + Environment.NewLine + Script_Output + Environment.NewLine + Resolution);
+        gameObject.GetComponent<Ticket_Format>().Format_Ticket();
 
         Command_File_Name = "/Command_Cache.txt";
         Path = Application.dataPath + Command_File_Name;

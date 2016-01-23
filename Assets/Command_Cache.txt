@@ -35,3 +35,34 @@ Done
 RefreshTerminals at 12/22/2015 2:42:41 AM 4.001874
 Done
 RefreshTerminals at 12/22/2015 2:49:27 AM 3.610229
+Ticket  Created at 1/23/2016 2:41:50 PM 19.5521
+Done
+Ticket  Created at 1/23/2016 2:55:23 PM 24.3521
+Done
+Ticket  Created at 1/23/2016 2:58:36 PM 26.98583
+Done
+Ticket  Created at 1/23/2016 2:59:12 PM 6.225488
+Done
+RefreshTerminals at 1/23/2016 2:59:12 PM 6.238966
+Done
+Ticket  Created at 1/23/2016 3:07:05 PM 4.663144
+Done
+RefreshTerminals at 1/23/2016 3:07:05 PM 4.676518
+Done
+Ticket  Created at 1/23/2016 3:08:02 PM 5.138472
+Done
+RefreshTerminals at 1/23/2016 3:08:02 PM 5.151878
+DoneTicket  Created at 1/23/2016 3:09:46 PM 5.394864
+Done
+RefreshTerminals at 1/23/2016 3:09:46 PM 5.408177
+Done
+Ticket  Created at 1/23/2016 3:11:28 PM 35.99191
+Done
+Ticket  Created at 1/23/2016 3:15:11 PM 36.33578
+Done
+Ticket  Created at 1/23/2016 3:21:42 PM 24.63939
+Done
+Ticket  Created at 1/23/2016 4:02:39 PM 8.549455
+Done
+RefreshTerminals at 1/23/2016 4:02:39 PM 8.562822
+Done

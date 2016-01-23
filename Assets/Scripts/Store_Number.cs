@@ -22,7 +22,7 @@ public class Store_Number : MonoBehaviour {
         StoreNumber = System.IO.File.ReadAllText(Path);
 
         gameObject.GetComponent<Text>().text = "Store Number: " + StoreNumber;
-        Data_Saver.GetComponent<Save_Data>().Store_Number = "Store Number: " + StoreNumber;
+        Data_Saver.GetComponent<Save_Data>().Store_Number = StoreNumber;
 
     }
 }

@@ -279,6 +279,8 @@ public class Click_Behaviors : MonoBehaviour
     public void More_Issues_No()
     {
         Data_Saver.GetComponent<Save_Data>().Resolution = "Issue Resolved";
+        Data_Saver.GetComponent<Ticket_Format>().Incident_Status = "Resolved";
+        Data_Saver.GetComponent<Ticket_Format>().Contact_Name = "Store";
         Data_Saver.GetComponent<Save_Data>().Submit_Ticket();
         Data_Saver.GetComponent<Save_Data>().Scrub_Variables();
         Data_Saver.GetComponent<Save_Data>().Refresh_Terminals();
@@ -290,6 +292,7 @@ public class Click_Behaviors : MonoBehaviour
         GameObject Confirmation = gameObject.GetComponent<Parent>().Parent_Object;
         Panel = Confirmation.GetComponent<Parent>().Parent_Object;
         Data_Saver.GetComponent<Save_Data>().Resolution = "Unresolved";
+        Data_Saver.GetComponent<Ticket_Format>().Incident_Status = "In Progress";
         Ticket = Instantiate(Resources.Load("Ticket") as GameObject);
         Ticket.transform.SetParent(Panel.transform, false);
         Ticket.name = "Ticket";
