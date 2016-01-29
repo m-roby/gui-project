@@ -26,7 +26,7 @@ public class Customer_Input : MonoBehaviour {
 
 	public void Get_Name(InputField nameField)
     {
-        Name = "Name: " + nameField.text;
+        Name = nameField.text;
 	}
 
     public void Get_Contact_Info(InputField contactField)
@@ -49,6 +49,7 @@ public class Customer_Input : MonoBehaviour {
         bool NameNull = false;
         bool ContactNull = false;
 
+
         if (String.IsNullOrEmpty(Name))
         {
             NameNull = true;
@@ -66,6 +67,7 @@ public class Customer_Input : MonoBehaviour {
             Data_Saver.GetComponent<Ticket_Format>().Contact_Name = Name;
             Data_Saver.GetComponent<Ticket_Format>().Contact_info_From_User = Contact_Info;
             Data_Saver.GetComponent<Ticket_Format>().Issue_Summary_From_User = Ticket_Content;
+            Data_Saver.GetComponent<Ticket_Format>().Incident_Status = "In Progress";
 
             Data_Saver.GetComponent<Save_Data>().Customer_Input = Name + Environment.NewLine + Contact_Info + Environment.NewLine + Ticket_Content + Environment.NewLine;
             Data_Saver.GetComponent<Save_Data>().Terminal_Summary = Panel.GetComponent<Pannel_Info_Storage>().Terminal_Summary;

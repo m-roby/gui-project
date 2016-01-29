@@ -4,7 +4,6 @@ using System;
 using System.IO;
 using System.Text;
 using System.Collections.Generic;
-using UnityEngine.SceneManagement;
 
 public class Loading : MonoBehaviour {
 
@@ -35,7 +34,7 @@ public class Loading : MonoBehaviour {
             if (lines[lines.Length - 1] == "Done")
             {
                 Debug.Log("Done Running Command");
-                SceneManager.LoadScene("recovery");
+                Application.LoadLevel("recovery");
             }
             else
             {

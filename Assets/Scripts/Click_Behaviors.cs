@@ -273,6 +273,7 @@ public class Click_Behaviors : MonoBehaviour
         Ticket.transform.SetParent(Panel.transform, false);
         Ticket.name = "Ticket";
         Ticket.GetComponent<Customer_Input>().Panel = Panel;
+        gameObject.GetComponent<Parent>().Parent_Object.GetComponent<Solutions>().Data_Saver.GetComponent<Ticket_Format>().Device = gameObject.GetComponent<Parent>().Parent_Object.GetComponent<Pannel_Info_Storage>().Terminal.name;
 
     }
 

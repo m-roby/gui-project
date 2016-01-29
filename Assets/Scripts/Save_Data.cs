@@ -4,7 +4,6 @@ using System;
 using System.IO;
 using System.Text;
 using System.Collections.Generic;
-using UnityEngine.SceneManagement;
 
 public class Save_Data : MonoBehaviour {
     public string Path;
@@ -59,13 +58,13 @@ public class Save_Data : MonoBehaviour {
             {
                 string Command_Text = "RefreshTerminals " + "at " + DateTime.Now + " " + Time.realtimeSinceStartup + Environment.NewLine;
                 File.AppendAllText(Path, Command_Text);
-                SceneManager.LoadScene("Loading");
+                Application.LoadLevel("Loading");
             }
         }else
         {
             string Command_Text = "RefreshTerminals " + "at " + DateTime.Now + " " + Time.realtimeSinceStartup + Environment.NewLine;
             File.AppendAllText(Path, Command_Text);
-            SceneManager.LoadScene("Loading");
+            Application.LoadLevel("Loading");
         }
 
 
@@ -89,14 +88,14 @@ public class Save_Data : MonoBehaviour {
             {
                 string Command_Text = "RefreshTerminals " + "at " + DateTime.Now + " " + Time.realtimeSinceStartup + Environment.NewLine;
                 File.AppendAllText(Path, Command_Text);
-                SceneManager.LoadScene("Loading");
+                Application.LoadLevel("Loading");
             }
         }
         else
         {
             string Command_Text = "RefreshTerminals " + "at " + DateTime.Now + " " + Time.realtimeSinceStartup + Environment.NewLine;
             File.AppendAllText(Path, Command_Text);
-            SceneManager.LoadScene("Loading");
+            Application.LoadLevel("Loading");
         }
 
 

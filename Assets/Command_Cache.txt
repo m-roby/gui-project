@@ -66,3 +66,28 @@ Ticket  Created at 1/23/2016 4:02:39 PM 8.549455
 Done
 RefreshTerminals at 1/23/2016 4:02:39 PM 8.562822
 Done
+Ticket  Created at 1/24/2016 3:37:06 PM 11.90448
+Done
+Ticket  Created at 1/24/2016 3:56:12 PM 20.25711
+Done
+Ticket  Created at 1/24/2016 4:04:03 PM 8.027282
+Done
+Ticket  Created at 1/24/2016 4:06:42 PM 7.805
+Done
+Ticket  Created at 1/24/2016 4:07:15 PM 7.353865
+Done
+Ticket  Created at 1/24/2016 4:10:00 PM 38.33279
+Done
+Ticket  Created at 1/24/2016 4:14:24 PM 48.08452
+Done
+Ticket  Created at 1/25/2016 12:18:58 PM 66.60417
+Done
+Ticket  Created at 1/25/2016 12:19:58 PM 126.8595
+Done
+RefreshTerminals at 1/25/2016 12:19:58 PM 126.8701
+Done
+RefreshKitchen at 1/25/2016 12:21:53 PM 241.9879
+DoneTicket  Created at 1/25/2016 12:22:10 PM 258.377
+Done
+RefreshTerminals at 1/25/2016 12:22:10 PM 258.3871
+Done

@@ -4,7 +4,6 @@ using System;
 using System.IO;
 using System.Text;
 using System.Collections.Generic;
-using UnityEngine.SceneManagement;
 
 public class Ticket_Format : MonoBehaviour {
     public GameObject Data_Saver;
@@ -82,11 +81,11 @@ public class Ticket_Format : MonoBehaviour {
         ProdCat3 = "Monitoring";
         ProdName = "Alerts";
 
-        Work_Detail_Notes = 
-            Contact_info_From_User + Environment.NewLine +
-            Issue_Summary_From_User + Environment.NewLine +
-            Data_Saver.GetComponent<Save_Data>().Terminal_Summary + Environment.NewLine + 
-            Data_Saver.GetComponent<Save_Data>().TroubleShooting_Steps;
+        Work_Detail_Notes =
+            Contact_info_From_User + Environment.NewLine + Environment.NewLine +
+            Issue_Summary_From_User + Environment.NewLine + Environment.NewLine +
+            Data_Saver.GetComponent<Save_Data>().Terminal_Summary + Environment.NewLine + Environment.NewLine +
+            Data_Saver.GetComponent<Save_Data>().TroubleShooting_Steps + Environment.NewLine;
 
         if (Incident_Status != "Resolved")
         {
@@ -150,7 +149,6 @@ public class Ticket_Format : MonoBehaviour {
     public void Error_Code_Text()
     {
         Error_Code = Data_Saver.GetComponent<Save_Data>().Error_Code;
-        Device = Data_Saver.GetComponent<Save_Data>().Name;
 
         switch (Error_Code)
         {
@@ -203,8 +201,17 @@ public class Ticket_Format : MonoBehaviour {
                 break;
         }
 
-        Incident_Main_Summary = Device + " " + Error_Code_Summary;
-        Work_Detail_Summary = Incident_Main_Summary;
+        if (Error_Code != 0)
+        {
+            Device = Data_Saver.GetComponent<Save_Data>().Name;
+            Incident_Main_Summary = Device + " " + Error_Code_Summary;
+            Work_Detail_Summary = Incident_Main_Summary;
+        }
+        else
+        {
+            Incident_Main_Summary = "User Reported Issue on " + Device;
+            Work_Detail_Summary = Incident_Main_Summary;
+        }
 
     }
 }
