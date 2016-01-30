@@ -81,11 +81,34 @@ public class POS_Error_Check : MonoBehaviour {
             Errors_Detected=("Packet Loss Error Detected on " + Name);
         }
 
+
+
         if (Drive_Health != "No Issues Detected")
         {
+            /* will need to wait until API is set up to check if a ticket for the issue alread exists bofore creating*/
+
             Error_Detected = true;
             gameObject.GetComponent<Error_Codes>().Error_Code_Number = 2;
             Errors_Detected =("Drive Error Detected on " + Name);
+
+            GameObject dataSaver = GameObject.Find("Data_Save");
+            Summary();
+
+            dataSaver.GetComponent<Ticket_Format>().Contact_Name = "System Generated Ticket";
+            dataSaver.GetComponent<Ticket_Format>().AutoTicket = true;
+            dataSaver.GetComponent<Save_Data>().Error_Code = 2;
+            dataSaver.GetComponent<Save_Data>().Name = Name;
+
+            dataSaver.GetComponent<Ticket_Format>().AutoTicketNotes =
+                "Warning: " + "I/O Errors have been detected on " + Name +
+                ". I/O errors are the result of damage to the internal drive of the computer and will require a reaplcement terminal." +
+                Environment.NewLine + Environment.NewLine +
+                "A ticket was automatically created and submitted as soon as this error was detected. For more information please contact the Help Desk" +
+                Environment.NewLine + Environment.NewLine +
+                Terminal_Summary;
+
+            dataSaver.GetComponent<Save_Data>().Submit_Ticket();
+            dataSaver.GetComponent<Ticket_Format>().AutoTicket = false;
         }
 
         if (Printer_Errors == "Printer out of Paper")

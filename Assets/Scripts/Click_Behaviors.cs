@@ -124,11 +124,19 @@ public class Click_Behaviors : MonoBehaviour
         {
             //Data_Saver.GetComponent<Save_Data>().Submit_Ticket();
             //Destroy(Panel);
-            GameObject Confirmation;
-            Confirmation = Instantiate(Resources.Load("Confirmation") as GameObject);
-            Confirmation.transform.SetParent(Panel.transform, false);
-            Confirmation.name = "Confirmation";
-            Confirmation.GetComponent<Parent>().Parent_Object = Panel;
+
+            if (Panel.GetComponent<Pannel_Info_Storage>().Error_Code != 2)
+            {
+                GameObject Confirmation;
+                Confirmation = Instantiate(Resources.Load("Confirmation") as GameObject);
+                Confirmation.transform.SetParent(Panel.transform, false);
+                Confirmation.name = "Confirmation";
+                Confirmation.GetComponent<Parent>().Parent_Object = Panel;
+            }
+            else
+            {
+                Destroy(Panel);
+            }
         }
 
 

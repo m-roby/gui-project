@@ -46,6 +46,9 @@ public class Ticket_Format : MonoBehaviour {
     public string ResProdName;
     public string Resolution;
 
+    public bool AutoTicket;
+    public string AutoTicketNotes;
+
     // Use this for initialization
     void Start () {
         Data_Saver = GameObject.Find("Data_Save");
@@ -81,11 +84,19 @@ public class Ticket_Format : MonoBehaviour {
         ProdCat3 = "Monitoring";
         ProdName = "Alerts";
 
-        Work_Detail_Notes =
+        if (AutoTicket != true)
+        {
+            Work_Detail_Notes =
             Contact_info_From_User + Environment.NewLine + Environment.NewLine +
             Issue_Summary_From_User + Environment.NewLine + Environment.NewLine +
             Data_Saver.GetComponent<Save_Data>().Terminal_Summary + Environment.NewLine + Environment.NewLine +
             Data_Saver.GetComponent<Save_Data>().TroubleShooting_Steps + Environment.NewLine;
+        }
+
+        if (AutoTicket == true)
+        {
+            Work_Detail_Notes = AutoTicketNotes;
+        }
 
         if (Incident_Status != "Resolved")
         {

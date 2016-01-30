@@ -62,6 +62,38 @@ public class Solutions : MonoBehaviour {
         switch (Error_Code_Number)
         {
 
+            case 2:  /*IO Errors*/
+                Number_Of_Steps = 1;
+                Step_Text = new string[Number_Of_Steps];
+                Step_Image = new Sprite[Number_Of_Steps];
+
+                Step_Image[0] = Resources.Load<Sprite>("Sprites/Error_1");
+
+
+
+                Time_between_Clicks[Clicks] = Start_Time - Last_Start_time;
+
+                Step_Text[0] = "Warning" + "\n" + "I/O Errors have been detected on " + gameObject.GetComponent<Pannel_Info_Storage>().Terminal.name + ". I/O errors are the result of damage to the internal drive of the computer and will require a reaplcement terminal." + Environment.NewLine + Environment.NewLine + "A ticket was automatically created and submitted as soon as this error was detected. For more information please contact the Help Desk";          
+
+                if (Clicks <= (Step_Text.Length - 1))
+                {
+                    Solution_Text = Step_Text[Clicks];
+                    Image.GetComponent<Image>().sprite = Step_Image[Clicks];
+                }
+                if (Clicks == (Step_Text.Length - 1))
+                {
+                    TS_Finished = true;
+                    Debug.Log("TS Finished");
+                    Data_Saver.GetComponent<Save_Data>().Name = gameObject.GetComponent<Pannel_Info_Storage>().Terminal.name;
+                    Data_Saver.GetComponent<Save_Data>().Terminal_Summary = gameObject.GetComponent<Pannel_Info_Storage>().Terminal_Summary;
+                    Data_Saver.GetComponent<Save_Data>().Error_Code = gameObject.GetComponent<Pannel_Info_Storage>().Error_Code;
+                    Data_Saver.GetComponent<Save_Data>().TroubleShooting_Steps =
+                        Step_Text[0] + Environment.NewLine +
+                        "Time On Step " + Time_between_Clicks[0] + Environment.NewLine + Environment.NewLine;
+                }
+
+                break;
+
             case 3:  /*Printer port Errors*/
                 Number_Of_Steps = 2;
                 Step_Text = new string[Number_Of_Steps];
