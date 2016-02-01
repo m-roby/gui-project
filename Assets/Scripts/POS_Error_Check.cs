@@ -79,11 +79,12 @@ public class POS_Error_Check : MonoBehaviour {
             Error_Detected = true;
             gameObject.GetComponent<Error_Codes>().Error_Code_Number = 1;
             Errors_Detected=("Packet Loss Error Detected on " + Name);
+            return;
         }
 
 
 
-        if (Drive_Health != "No Issues Detected")
+        if (Drive_Health != "No Issues Detected" && Drive_Health != "Unable to aquire")
         {
             /* will need to wait until API is set up to check if a ticket for the issue alread exists bofore creating*/
 

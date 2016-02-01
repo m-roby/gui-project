@@ -37,6 +37,15 @@ public class POS_Image_Changer : MonoBehaviour {
                 GetComponent<Image>().sprite = Image;
                 gameObject.GetComponent<POS_Device_Info>().Terminal_Type = "Fusion";
             }
+
+            if (Model.Contains("PD359"))
+            {
+                Debug.Log("Express");
+                Image = Resources.Load<Sprite>("Sprites/Express");
+                Back_Image = Resources.Load<Sprite>("TSImages/Express_Cables");
+                GetComponent<Image>().sprite = Image;
+                gameObject.GetComponent<POS_Device_Info>().Terminal_Type = "Fusion";
+            }
         }
 
 

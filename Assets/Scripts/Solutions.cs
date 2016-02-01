@@ -139,8 +139,8 @@ public class Solutions : MonoBehaviour {
                 break;
 
 
-            case 6:  /*Printer attached but not configured*/
-                Number_Of_Steps = 5;
+            case 6:  /*Printer configured but not attached*/
+                Number_Of_Steps = 4;
                 Step_Text = new string[Number_Of_Steps];
                 Step_Image = new Sprite[Number_Of_Steps];
 
